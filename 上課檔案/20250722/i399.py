@@ -1,0 +1,7 @@
+l = list(map(int, input().split()))
+s = set(l)
+p = max([l.count(i) for i in s])
+s = list(s)
+s.sort()
+s.reverse()
+print(p, *s)
